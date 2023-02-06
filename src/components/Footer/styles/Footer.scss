@@ -1,0 +1,310 @@
+@import '../../../breakpoints/breakpoints.scss';
+@import '../../../mixins/mixins.scss';
+
+.footerContainer {
+	color: var(--mainText);
+	background: var(--HeadingColor);
+	@include heightWidth(auto, 100vw);
+	font-family: 'Cabin', sans-serif;
+	.footerNav {
+		#nav {
+			@include flexCenter(row, space-evenly, center);
+			margin: 0;
+			padding: 0.5em 1em;
+			background-color: rgba(0, 0, 0, 0.25);
+			li {
+				list-style: none;
+				transform: scale(1);
+				transition: all 0.5s ease-in-out;
+				&:hover {
+					transform: scale(1.1);
+				}
+				div {
+					color: #b3b3b3;
+					list-style-type: none;
+					a {
+						color: var(--mainText);
+						&:hover {
+							color: var(--secondaryText);
+							text-decoration: none;
+						}
+					}
+				}
+			}
+			.navLinesBottom {
+				color: var(--mainText);
+			}
+		}
+	}
+	#footerline {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		border-top: 1px solid var(--HeadingColor);
+	}
+	.footerSubContainer {
+		@include flexCenter(row, space-between, center);
+		@include heightWidth(auto, 100vw);
+		text-align: center;
+		font-size: 1rem;
+		margin: 0px auto;
+		padding: 0px 2em;
+		color: var(--mainText);
+		background: rgba(0, 0, 0, 0.5);
+		.leftFooter {
+		}
+		.rightFooter {
+		}
+	}
+
+	@include media('<=phone') {
+		.footerNav {
+			#nav {
+				font-size: 1rem;
+				li {
+					div {
+						a {
+							&:hover {
+							}
+						}
+					}
+					.navLinesBottom {
+						margin: 0px 1em;
+					}
+				}
+			}
+		}
+		#footerline {
+		}
+		.footerSubContainer {
+			font-size: 0.5rem;
+			.leftFooter {
+			}
+			.rightFooter {
+			}
+		}
+	}
+
+	@include media('>phone', '<=425px') {
+		.footerNav {
+			#nav {
+				font-size: 1rem;
+
+				padding: 0.25em;
+				li {
+					div {
+						a {
+							&:hover {
+							}
+						}
+					}
+					.navLinesBottom {
+						margin: 0px 1em;
+					}
+				}
+			}
+		}
+		#footerline {
+		}
+		.footerSubContainer {
+			font-size: 0.75rem;
+			margin: 0px;
+			padding: 0px 1em;
+			.leftFooter {
+			}
+			.rightFooter {
+			}
+		}
+	}
+
+	@include media('>425px', '<=tablet') {
+		.footerNav {
+			#nav {
+				font-size: 1.5rem;
+
+				padding: 0px 0.75em;
+				li {
+					div {
+						a {
+							&:hover {
+							}
+						}
+					}
+					.navLinesBottom {
+						margin: 0px 1em;
+					}
+				}
+			}
+		}
+		#footerline {
+		}
+		.footerSubContainer {
+			font-size: 1rem;
+			.leftFooter {
+			}
+			.rightFooter {
+			}
+		}
+	}
+
+	@include media('>tablet', '<desktop') {
+		.footerNav {
+			#nav {
+				font-size: 1.5rem;
+
+				padding: 0px 2em;
+				li {
+					div {
+						a {
+							&:hover {
+							}
+							.selectA {
+								&::after {
+									@include contentMix('Home');
+								}
+							}
+							.selectB {
+								&::after {
+									@include contentMix('Top');
+								}
+							}
+							.selectC {
+								&::after {
+									@include contentMix('Project');
+								}
+							}
+							.selectD {
+								&::after {
+									@include contentMix('Linkedin');
+								}
+							}
+							.selectE {
+								&::after {
+									@include contentMix('Github');
+								}
+							}
+						}
+					}
+					.navLinesBottom {
+						margin: 0px 2em;
+					}
+				}
+			}
+		}
+		#footerline {
+		}
+		.footerSubContainer {
+			font-size: 1rem;
+			.leftFooter {
+			}
+			.rightFooter {
+			}
+		}
+	}
+
+	@include media('>=desktop') {
+		.footerNav {
+			#nav {
+				font-size: 2rem;
+				li {
+					div {
+						a {
+							&:hover {
+							}
+							.selectA {
+								&::after {
+									@include contentMix('Home');
+								}
+							}
+							.selectB {
+								&::after {
+									@include contentMix('Top');
+								}
+							}
+							.selectC {
+								&::after {
+									@include contentMix('Project');
+								}
+							}
+							.selectD {
+								&::after {
+									@include contentMix('Linkedin');
+								}
+							}
+							.selectE {
+								&::after {
+									@include contentMix('Github');
+								}
+							}
+						}
+					}
+					.navLinesBottom {
+						margin: 0px 3.5em;
+					}
+				}
+			}
+		}
+		#footerline {
+		}
+		.footerSubContainer {
+			font-size: 1rem;
+			.leftFooter {
+			}
+			.rightFooter {
+			}
+		}
+	}
+
+	@include media('>=LGdesktop', 'retina2x') {
+		.footerNav {
+			#nav {
+				font-size: 2rem;
+
+				li {
+					div {
+						a {
+							&:hover {
+							}
+							.selectA {
+								&::after {
+									@include contentMix('Home');
+								}
+							}
+							.selectB {
+								&::after {
+									@include contentMix('Top');
+								}
+							}
+							.selectC {
+								&::after {
+									@include contentMix('Project');
+								}
+							}
+							.selectD {
+								&::after {
+									@include contentMix('Linkedin');
+								}
+							}
+							.selectE {
+								&::after {
+									@include contentMix('Github');
+								}
+							}
+						}
+					}
+					.navLinesBottom {
+					}
+					margin: 0px 3.5em;
+				}
+			}
+		}
+		#footerline {
+		}
+		.footerSubContainer {
+			font-size: 2rem;
+			.leftFooter {
+			}
+			.rightFooter {
+			}
+		}
+	}
+}

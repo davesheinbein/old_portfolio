@@ -1,0 +1,204 @@
+/**
+*
+* Testing
+*
+**/
+div .side2 {
+  background-color: var(--secondaryColor);
+  overflow: hidden;
+}
+
+div .side2 .sub-container {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+}
+
+div .side2 .main-container {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+}
+
+div .side2 .main-container .backgroundBox {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+div .side2 .main-container .backgroundBox .waves-container .waveA {
+  display: var(--DisplayA);
+  position: absolute;
+  top: 200px;
+  left: 0%;
+  width: 100vw;
+  height: 500px;
+  background-repeat: repeat-x;
+}
+
+div .side2 .main-container .backgroundBox .waves-container .waveA img {
+  width: 1500vw;
+  height: 40vh;
+}
+
+div .side2 .main-container .backgroundBox .waves-container .waveB {
+  display: var(--DisplayA);
+  position: absolute;
+  top: 200px;
+  left: 0%;
+  width: 100vw;
+  height: 500px;
+  background-repeat: repeat-x;
+}
+
+div .side2 .main-container .backgroundBox .waves-container .waveB img {
+  width: 1500vw;
+  height: 40vh;
+}
+
+div .side2 .main-container .backgroundBox .fireworks-container .fireworks {
+  display: var(--DisplayB);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  background-size: 5000px 500px;
+  overflow: hidden;
+  background-color: black;
+}
+
+div .side1 {
+  background-color: var(--mainColor);
+  overflow: hidden;
+}
+
+div .side1 .sub-container {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+}
+
+@media (max-width: 360px) {
+  div .side2 .main-container .backgroundBox {
+    top: 25%;
+  }
+  div .side2 .main-container .backgroundBox .waves-container .waveA img {
+    width: 1500vw;
+    height: 50vh;
+  }
+  div .side2 .main-container .backgroundBox .waves-container .waveB img {
+    width: 1500vw;
+    height: 50vh;
+  }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  div .side2 {
+    background-color: var(--TertiaryTextBtnText);
+  }
+  div .side2 .main-container .backgroundBox {
+    -webkit-transform: translateY(2em);
+            transform: translateY(2em);
+  }
+  div .side2 .main-container .backgroundBox .waves-container .waveA img {
+    width: 1500vw;
+    min-height: 100vh;
+  }
+  div .side2 .main-container .backgroundBox .waves-container .waveB img {
+    width: 1500vw;
+    min-height: 100vh;
+  }
+}
+
+@media only screen and (min-device-width: 100px) and (max-device-width: 351px) and (-webkit-min-device-pixel-ratio: 2) {
+  div .side2 {
+    background-color: var(--TertiaryTextBtnText);
+  }
+  div .side2 .main-container .backgroundBox {
+    -webkit-transform: translateY(16em);
+            transform: translateY(16em);
+  }
+  div .side2 .main-container .backgroundBox .waves-container .waveA img {
+    width: 1500vw;
+    min-height: 100vh;
+  }
+  div .side2 .main-container .backgroundBox .waves-container .waveB img {
+    width: 1500vw;
+    min-height: 100vh;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 425px) {
+  div .side2 .main-container .backgroundBox {
+    top: 15%;
+  }
+  div .side2 .main-container .backgroundBox .waves-container .waveA img {
+    width: 1500vw;
+    height: 60vh;
+  }
+  div .side2 .main-container .backgroundBox .waves-container .waveB img {
+    width: 1500vw;
+    height: 60vh;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  div .side2 .main-container .backgroundBox {
+    top: 10%;
+  }
+  div .side2 .main-container .backgroundBox .waves-container .waveA img {
+    width: 1500vw;
+    height: 80vh;
+  }
+  div .side2 .main-container .backgroundBox .waves-container .waveB img {
+    width: 1500vw;
+    height: 80vh;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1365px) {
+  div .side2 .main-container .backgroundBox {
+    top: -5%;
+  }
+  div .side2 .main-container .backgroundBox .waves-container .waveA img {
+    width: 1500vw;
+    height: 60vh;
+  }
+  div .side2 .main-container .backgroundBox .waves-container .waveB img {
+    width: 1500vw;
+    height: 60vh;
+  }
+}
+
+@media (min-width: 1366px) {
+  div .side2 .main-container .backgroundBox {
+    top: 5%;
+  }
+  div .side2 .main-container .backgroundBox .waves-container .waveA img {
+    width: 1500vw;
+    height: 40vh;
+  }
+  div .side2 .main-container .backgroundBox .waves-container .waveB img {
+    width: 1500vw;
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (min-resolution: 192dpi) {
+  div .side2 .main-container .backgroundBox {
+    top: 0%;
+  }
+  div .side2 .main-container .backgroundBox .waves-container .waveA img {
+    width: 1500vw;
+    height: 40vh;
+  }
+  div .side2 .main-container .backgroundBox .waves-container .waveB img {
+    width: 1500vw;
+    height: 40vh;
+  }
+}
+/*# sourceMappingURL=LayoutPage.css.map */

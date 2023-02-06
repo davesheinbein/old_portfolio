@@ -1,0 +1,388 @@
+/* SVG styling */
+svg {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+svg #hair {
+  -webkit-animation: hairAnim 3s ease-out infinite alternate;
+          animation: hairAnim 3s ease-out infinite alternate;
+}
+
+svg #head {
+  -webkit-animation: headAnim 3s ease-out infinite alternate;
+          animation: headAnim 3s ease-out infinite alternate;
+}
+
+svg #back-cape {
+  -webkit-animation: backCapeAnim 5s ease-out infinite alternate;
+          animation: backCapeAnim 5s ease-out infinite alternate;
+}
+
+svg #cape-collar {
+  -webkit-animation: collarAnim 3s ease-out infinite alternate;
+          animation: collarAnim 3s ease-out infinite alternate;
+}
+
+svg #left-arm {
+  -webkit-animation: leftArmAnim 2s ease-out infinite alternate;
+          animation: leftArmAnim 2s ease-out infinite alternate;
+}
+
+svg #legs {
+  -webkit-animation: legsAnim 3s ease-out 0.5s infinite alternate;
+          animation: legsAnim 3s ease-out 0.5s infinite alternate;
+}
+
+svg #spec_1,
+svg #spec_2,
+svg #spec_3 {
+  -webkit-animation: specAnim 1s ease-out 2s infinite alternate;
+          animation: specAnim 1s ease-out 2s infinite alternate;
+  transform-box: fill-box;
+}
+
+svg #circle_1,
+svg #circle_2,
+svg #circle_3 {
+  -webkit-animation: circleAnim 4s ease-out 1s infinite alternate;
+          animation: circleAnim 4s ease-out 1s infinite alternate;
+  transform-box: fill-box;
+}
+
+svg #cross_1,
+svg #cross_2,
+svg #cross_3 {
+  -webkit-animation: crossAnim 2s ease-out 3s infinite alternate;
+          animation: crossAnim 2s ease-out 3s infinite alternate;
+  transform-box: fill-box;
+}
+
+svg #star_1,
+svg #star_2 {
+  -webkit-animation: starAnim 4s ease-in-out 0.5s infinite alternate;
+          animation: starAnim 4s ease-in-out 0.5s infinite alternate;
+  transform-box: fill-box;
+}
+
+svg .cls-1 {
+  fill: var(--heroCape);
+}
+
+svg .cls-2 {
+  fill: none;
+}
+
+svg .cls-3,
+svg .cls-4 {
+  opacity: 0.1;
+}
+
+svg .cls-5 {
+  fill: var(--heroSkin);
+}
+
+svg .cls-6 {
+  fill: var(--heroBody);
+}
+
+svg .cls-7 {
+  fill: var(--heroHair);
+}
+
+svg .cls-8 {
+  fill: var(--heroSpecs);
+}
+
+svg .cls-9 {
+  fill: var(--heroStars);
+}
+
+svg .cls-3,
+svg .cls-8,
+svg .cls-9,
+svg .cls-10 {
+  isolation: isolate;
+}
+
+svg .cls-8,
+svg .cls-9,
+svg .cls-10,
+svg .cls-11 {
+  opacity: 0.5;
+}
+
+svg .cls-10,
+svg .cls-12 {
+  fill: var(--heroCross);
+}
+
+svg .cls-13 {
+  fill: var(--heroShoes);
+}
+
+svg .cls-14 {
+  fill: var(--heroPants);
+}
+
+/* SVG animations */
+@-webkit-keyframes backCapeAnim {
+  from {
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-transform: translateX(60px) translateY(40px) scale(0.75, 0.75);
+            transform: translateX(60px) translateY(40px) scale(0.75, 0.75);
+  }
+  to {
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-transform: translateX(0px) translateY(0px) scale(1, 1);
+            transform: translateX(0px) translateY(0px) scale(1, 1);
+  }
+}
+@keyframes backCapeAnim {
+  from {
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-transform: translateX(60px) translateY(40px) scale(0.75, 0.75);
+            transform: translateX(60px) translateY(40px) scale(0.75, 0.75);
+  }
+  to {
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-transform: translateX(0px) translateY(0px) scale(1, 1);
+            transform: translateX(0px) translateY(0px) scale(1, 1);
+  }
+}
+
+@-webkit-keyframes collarAnim {
+  from {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+  to {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+}
+
+@keyframes collarAnim {
+  from {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+  to {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+}
+
+@-webkit-keyframes leftArmAnim {
+  from {
+    -webkit-transform: translateX(12px) rotateZ(3deg) rotateY(10deg);
+            transform: translateX(12px) rotateZ(3deg) rotateY(10deg);
+  }
+  to {
+    -webkit-transform: translateX(0px) rotateZ(0deg) rotateY(0deg);
+            transform: translateX(0px) rotateZ(0deg) rotateY(0deg);
+  }
+}
+
+@keyframes leftArmAnim {
+  from {
+    -webkit-transform: translateX(12px) rotateZ(3deg) rotateY(10deg);
+            transform: translateX(12px) rotateZ(3deg) rotateY(10deg);
+  }
+  to {
+    -webkit-transform: translateX(0px) rotateZ(0deg) rotateY(0deg);
+            transform: translateX(0px) rotateZ(0deg) rotateY(0deg);
+  }
+}
+
+@-webkit-keyframes headAnim {
+  from {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+  }
+  to {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+@keyframes headAnim {
+  from {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+  }
+  to {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+@-webkit-keyframes hairAnim {
+  from {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  to {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@keyframes hairAnim {
+  from {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  to {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@-webkit-keyframes legsAnim {
+  from {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+  to {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+@keyframes legsAnim {
+  from {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+  to {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+@-webkit-keyframes specAnim {
+  from {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(0, 0) skew(60deg, 60deg);
+            transform: scale(0, 0) skew(60deg, 60deg);
+  }
+  to {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(1, 1) skew(0deg, 0deg);
+            transform: scale(1, 1) skew(0deg, 0deg);
+  }
+}
+
+@keyframes specAnim {
+  from {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(0, 0) skew(60deg, 60deg);
+            transform: scale(0, 0) skew(60deg, 60deg);
+  }
+  to {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(1, 1) skew(0deg, 0deg);
+            transform: scale(1, 1) skew(0deg, 0deg);
+  }
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(0, 0) skew(90deg, 90deg) rotateZ(0deg);
+            transform: scale(0, 0) skew(90deg, 90deg) rotateZ(0deg);
+  }
+  to {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(1, 1) skew(0deg, 0deg) rotateZ(-720deg);
+            transform: scale(1, 1) skew(0deg, 0deg) rotateZ(-720deg);
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(0, 0) skew(90deg, 90deg) rotateZ(0deg);
+            transform: scale(0, 0) skew(90deg, 90deg) rotateZ(0deg);
+  }
+  to {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(1, 1) skew(0deg, 0deg) rotateZ(-720deg);
+            transform: scale(1, 1) skew(0deg, 0deg) rotateZ(-720deg);
+  }
+}
+
+@-webkit-keyframes crossAnim {
+  from {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(0, 0) rotateZ(0deg);
+            transform: scale(0, 0) rotateZ(0deg);
+  }
+  to {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(1, 1) rotateZ(-360deg);
+            transform: scale(1, 1) rotateZ(-360deg);
+  }
+}
+
+@keyframes crossAnim {
+  from {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(0, 0) rotateZ(0deg);
+            transform: scale(0, 0) rotateZ(0deg);
+  }
+  to {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(1, 1) rotateZ(-360deg);
+            transform: scale(1, 1) rotateZ(-360deg);
+  }
+}
+
+@-webkit-keyframes starAnim {
+  from {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(0, 0) rotateZ(0deg);
+            transform: scale(0, 0) rotateZ(0deg);
+  }
+  to {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(1, 1) rotateZ(720deg);
+            transform: scale(1, 1) rotateZ(720deg);
+  }
+}
+
+@keyframes starAnim {
+  from {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(0, 0) rotateZ(0deg);
+            transform: scale(0, 0) rotateZ(0deg);
+  }
+  to {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(1, 1) rotateZ(720deg);
+            transform: scale(1, 1) rotateZ(720deg);
+  }
+}
+/*# sourceMappingURL=Superhero.css.map */
